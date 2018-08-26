@@ -24,6 +24,9 @@ class Cities extends React.Component{
   	}
   	handleChange = ({ option }) => {
 	    this.props.getLocation(option);
+	    this.setState({
+	      selectedOption: option
+	    });
   	};
   	
 	render(){
